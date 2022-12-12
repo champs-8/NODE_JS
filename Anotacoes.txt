@@ -1,0 +1,15 @@
+node index.js => dá inicio ao arquivo
+cd + nome da pasta => troca de pasta
+C:\>cd /d D:\NODE_JS => troca de caminho de unidade 
+cd .. => volta uma pasta
+
+quando criar um servidor precisa dar inicio a ele, rodando o arquivo
+
+framework EXPRESS veio suprir a necessidade de trabalhar com rotas.
+é responsavel pelo acesso a outra paginas dentro do site.
+
+Ctrl + C pausa o servidor.
+
+módulo NODEMON serve para reiniciar as configurações do servidor automaticamente,
+só salvar e atualizar a pagina, sem necessitar de pausar o servidor e inicia-lo de novo.
+
