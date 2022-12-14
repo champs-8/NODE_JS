@@ -14,3 +14,16 @@ módulo NODEMON serve para reiniciar as configurações do servidor automaticame
 só salvar e atualizar a pagina, sem necessitar de pausar o servidor e inicia-lo de novo.
 
 vamos carregar um arquivo no lugar da frase Gerenciador de putas.
+
+voltando as aulas de mysql;
+create database; para criar banco de dados
+
+nao esquecer de colocar ';'.
+show database -> mostra os db disponiveis
+use -> usa o db
+create table (nome) -> cria tabela, junto com o tipo primitivo
+insert into (nome tabela) (nome, email) -> vai inserir valores na tabela nessas colunas ... values (valores a serem inseridos). 
+
+npm install mysql --save (instalar mysql)
+fazer a conexao (verificar no site do npm)
+

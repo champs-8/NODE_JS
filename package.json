@@ -1,5 +1,23 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "express": "^4.18.2",
+    "mysql": "^2.18.1"
+  },
+  "name": "node_js",
+  "version": "1.0.0",
+  "description": "aprendendoNode",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/champs-8/NODE_JS.git"
+  },
+  "author": "Champs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/champs-8/NODE_JS/issues"
+  },
+  "homepage": "https://github.com/champs-8/NODE_JS#readme"
 }
