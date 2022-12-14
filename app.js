@@ -24,14 +24,14 @@ connection.connect((err) => {
 
 //pegar dados do DB
 //mesma query para pegar informações no workbench
-connection.query('select * from users', (err, res, fields) => {
+connection.query('SELECT * FROM users', (err, rows, fields) => {
     //se nao teve nenhum erro, vai mostrar o resultado
     if(!err) {
-        console.log(`RESULTADO: ${res}`);
+        console.log(`RESULTADO: `, rows);
+        //(`REsultado: ${rows}`) dá errado.
     }else{
         console.error("ERRO na consulta");
     }
-
 })
 
 
@@ -54,6 +54,6 @@ app.get("/contato", (req, res)=> {
     res.send("Página de contato")
 })
 //iniciar um servidor
-app.listen(8081);
-//localhost:8081
+app.listen(8080);
+//localhost:8080
 //na pasta raiz digita node index.js

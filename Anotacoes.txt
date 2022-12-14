@@ -27,3 +27,5 @@ insert into (nome tabela) (nome, email) -> vai inserir valores na tabela nessas 
 npm install mysql --save (instalar mysql)
 fazer a conexao (verificar no site do npm)
 
+mysql> CREATE USER 'root1'@'localhost' IDENTIFIED WITH mysql_native_password BY ''; criar um usuario de banco de dados.
+mysql> GRANT ALL PRIVILEGES ON * .* TO 'root1'@'localhost';  //conceder privilegios
