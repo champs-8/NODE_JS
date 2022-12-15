@@ -29,3 +29,16 @@ fazer a conexao (verificar no site do npm)
 
 mysql> CREATE USER 'root1'@'localhost' IDENTIFIED WITH mysql_native_password BY ''; criar um usuario de banco de dados.
 mysql> GRANT ALL PRIVILEGES ON * .* TO 'root1'@'localhost';  //conceder privilegios
+
+
+sequelize, criar, buscar, alterar dados do DB usando metodos do JS, permitir modificaçções nas tabelas.
+npm install --save sequelize
+depois precisa instalar a extensão do DB que vai estar ultilizando
+npm install --save mysql2
+depois precisa fazer a conexao, atribuindo para uma constante e requerindo ela
+
+utiliza metodos de Promisses para testes e verificações.
+
+sequelize.model ou sequelize.define para modelar as tabelas
+
+
