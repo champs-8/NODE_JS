@@ -18,9 +18,49 @@ connection.connect((err) => {
     if (err) {
         console.error(`Erro de conexão: ${err.stack}`);
         return
+        //quando tiver erro, vai retornar e nao vai prosseguir com o ID;
     }
     console.log(`Conectado no id ${connection.threadId}`);
 })
+
+
+//query para inserir dados no DB champs; pois a credencial connection
+//acessa ele.
+
+// connection.query("insert into users values (default,'Ana','ana@email.com'),(default,'Irineu','irineu@emial.com');", (err, res) => {
+//     //nao teve erro.
+//     //nessa conexão, o comando sql funcionou
+//     if(!err) {
+//         console.log('Usuário Cadastrado com sucesso!');
+//     }else{
+//         console.log('Erro ao cadastrar usuário.');
+//     }
+// })
+
+// =====================================
+    
+//fazer alterações no DB
+//modo de inserção correta
+// connection.query("update users set nome = 'Oswanildo', email = 'oswanildo@email.com' where id = 7;", (err, res) => {
+//     if(!err) {
+//         console.log('Usuario editado com sucesso');
+//     }else{
+//         console.error('Erro: o usuário nao foi editado com sucesso.');
+//     }
+// });
+
+// =====================================
+
+//deletar dados do DB
+//sintaxe correta
+connection.query("delete from users where id = 6;", (err, res) => {
+    if (!err) {
+        console.log('Linha de informação removida.');
+    }else{
+        console.error('Erro ao remover linha de informação.');
+    }
+})
+
 
 //pegar dados do DB
 //mesma query para pegar informações no workbench
